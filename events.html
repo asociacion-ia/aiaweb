@@ -4,35 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AIA - Próximos Eventos</title>
-  <link rel="icon" type="image" href="logo.jpg">
+  <link rel="icon" type="image" href="asologo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <style>
     .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1); }
   </style>
 </head>
-<body class="font-sans antialiased text-[#F4F5F0] bg-[#221965]">
+<body class="font-sans antialiased text-gray-100 bg-neutral-950">
 
   <!-- Navbar -->
-  <nav class="bg-[#4D40AC] shadow-lg fixed w-full z-50">
+  <nav class="bg-neutral-950/90 backdrop-blur-md fixed w-full z-50 border-b border-neutral-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <a href="index.html">
-            <img class="h-10 w-10 rounded-full object-cover" src="logo.jpg" alt="AIA Logo">
+            <img class="h-10 w-10 rounded-full object-cover" src="asologo.png" alt="AIA Logo">
           </a>
         </div>
         <div class="hidden md:flex md:items-center md:space-x-8">
-          <a href="index.html#inicio" class="text-[#F4F5F0] hover:text-[#8E84E6] px-3 py-2 text-sm font-medium">Inicio</a>
-          <a href="index.html#sobre-nosotros" class="text-[#F4F5F0] hover:text-[#8E84E6] px-3 py-2 text-sm font-medium">Sobre Nosotros</a>
+          <a href="index.html#inicio" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Inicio</a>
+          <a href="index.html#sobre-nosotros" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Sobre Nosotros</a>
           <a href="events.html" class="text-white font-semibold px-3 py-2 text-sm">Eventos</a>
-          <a href="index.html#contacto" class="text-[#F4F5F0] hover:text-[#8E84E6] px-3 py-2 text-sm font-medium">Contacto</a>
+          <a href="index.html#contacto" class="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Contacto</a>
         </div>
         <div class="flex items-center">
-          <a href="https://www.instagram.com/asociacion_ia/" target="_blank" class="text-[#F4F5F0] hover:text-[#8E84E6]">
+          <a href="https://www.instagram.com/asociacion_ia/" target="_blank" class="text-gray-300 hover:text-white">
             <i data-feather="instagram" class="h-5 w-5"></i>
           </a>
         </div>
@@ -41,9 +41,9 @@
   </nav>
 
   <!-- Header -->
-  <header class="pt-28 pb-16 bg-[#4D40AC] text-[#F4F5F0] text-center" data-aos="fade-down">
+  <header class="pt-28 pb-16 bg-neutral-900 text-white text-center border-b border-neutral-800" data-aos="fade-down">
     <h1 class="text-4xl font-bold mb-4">Próximos Eventos</h1>
-    <p class="max-w-2xl mx-auto text-lg text-[#E1E0ED]">
+    <p class="max-w-2xl mx-auto text-lg text-gray-400">
       Mantente al día con nuestras actividades, talleres y charlas sobre Inteligencia Artificial en la URJC.
     </p>
   </header>
@@ -53,54 +53,54 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Evento 1 -->
-      <div class="bg-[#F4F5F0] text-[#221965] rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-neutral-900 rounded-xl border border-neutral-800 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
         <img src="http://static.photos/technology/640x360/1" alt="Taller Machine Learning" class="w-full h-48 object-cover">
         <div class="p-6">
-          <div class="flex items-center text-sm text-[#4D40AC] mb-2">
+          <div class="flex items-center text-sm text-gray-400 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>15 Octubre 2023</span>
           </div>
-          <h2 class="text-xl font-bold mb-2">Introducción a Machine Learning</h2>
-          <p class="text-[#333] mb-4">
+          <h2 class="text-xl font-bold mb-2 text-white">Introducción a Machine Learning</h2>
+          <p class="text-gray-400 mb-4">
             Un taller práctico para aprender los conceptos básicos del Machine Learning con ejercicios guiados.
           </p>
-          <p class="text-[#4D40AC] text-sm mb-4">Ubicación: Aula 103, Campus de Móstoles</p>
-          <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">
+          <p class="text-gray-500 text-sm mb-4">Ubicación: Aula 103, Campus de Móstoles</p>
+          <a href="#" class="text-white hover:text-gray-300 font-medium flex items-center">
             Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i>
           </a>
         </div>
       </div>
 
       <!-- Evento 2 -->
-      <div class="bg-[#F4F5F0] text-[#221965] rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-neutral-900 rounded-xl border border-neutral-800 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
         <img src="http://static.photos/technology/640x360/2" alt="Charla Ética en IA" class="w-full h-48 object-cover">
         <div class="p-6">
-          <div class="flex items-center text-sm text-[#4D40AC] mb-2">
+          <div class="flex items-center text-sm text-gray-400 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>22 Octubre 2023</span>
           </div>
-          <h2 class="text-xl font-bold mb-2">Ética en Inteligencia Artificial</h2>
-          <p class="text-[#333] mb-4">
+          <h2 class="text-xl font-bold mb-2 text-white">Ética en Inteligencia Artificial</h2>
+          <p class="text-gray-400 mb-4">
             Una charla para reflexionar sobre los retos y responsabilidades de los sistemas inteligentes en la sociedad.
           </p>
-          <p class="text-[#4D40AC] text-sm mb-4">Ubicación: Salón de Actos, Campus de Fuenlabrada</p>
-          <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">
+          <p class="text-gray-500 text-sm mb-4">Ubicación: Salón de Actos, Campus de Fuenlabrada</p>
+          <a href="#" class="text-white hover:text-gray-300 font-medium flex items-center">
             Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i>
           </a>
         </div>
       </div>
 
       <!-- Evento 3 -->
-      <div class="bg-[#F4F5F0] text-[#221965] rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-neutral-900 rounded-xl border border-neutral-800 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
         <img src="http://static.photos/technology/640x360/3" alt="Hackathon de IA" class="w-full h-48 object-cover">
         <div class="p-6">
-          <div class="flex items-center text-sm text-[#4D40AC] mb-2">
+          <div class="flex items-center text-sm text-gray-400 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>5 Noviembre 2023</span>
           </div>
-          <h2 class="text-xl font-bold mb-2">Hackathon de Inteligencia Artificial</h2>
-          <p class="text-[#333] mb-4">
+          <h2 class="text-xl font-bold mb-2 text-white">Hackathon de Inteligencia Artificial</h2>
+          <p class="text-gray-400 mb-4">
             Un reto de 24 horas para crear proyectos innovadores de IA en equipos multidisciplinares.
           </p>
-          <p class="text-[#4D40AC] text-sm mb-4">Ubicación: Biblioteca Central, Campus de Móstoles</p>
-          <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">
+          <p class="text-gray-500 text-sm mb-4">Ubicación: Biblioteca Central, Campus de Móstoles</p>
+          <a href="#" class="text-white hover:text-gray-300 font-medium flex items-center">
             Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i>
           </a>
         </div>
@@ -110,7 +110,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-[#4D40AC] text-[#F4F5F0] py-8">
+  <footer class="bg-neutral-950 text-gray-400 border-t border-neutral-800 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="md:flex md:items-center md:justify-between">
         <div class="flex justify-center md:order-2 space-x-6 mb-6 md:mb-0">
@@ -124,9 +124,11 @@
             <i data-feather="linkedin" class="h-5 w-5"></i>
           </a>
         </div>
-        <p class="text-center text-sm md:text-left">
-          &copy; 2025 Asociación de Inteligencia Artificial (AIA) - URJC. Todos los derechos reservados.
-        </p>
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-center text-sm md:text-left">
+            &copy; 2023 Asociación de Inteligencia Artificial (AIA) - URJC. Todos los derechos reservados.
+          </p>
+        </div>
       </div>
     </div>
   </footer>
