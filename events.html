@@ -11,15 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <style>
     .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); }
   </style>
 </head>
-<body class="font-sans antialiased bg-white text-neutral-900">
+<body class="font-sans antialiased text-neutral-900 bg-white">
 
   <!-- Navbar -->
-  <nav class="bg-[#221965] fixed w-full z-50 shadow-md">
+  <nav class="bg-[#221965] text-white fixed w-full z-50 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
+      <div class="flex justify-between h-16 items-center">
         <div class="flex items-center">
           <a href="index.html">
             <img class="h-10 w-10 rounded-full object-cover" src="logoaso.png" alt="AIA Logo">
@@ -28,7 +28,7 @@
         <div class="hidden md:flex md:items-center md:space-x-8">
           <a href="index.html#inicio" class="text-white hover:text-[#F4F5F0] px-3 py-2 text-sm font-medium">Inicio</a>
           <a href="index.html#sobre-nosotros" class="text-white hover:text-[#F4F5F0] px-3 py-2 text-sm font-medium">Sobre Nosotros</a>
-          <a href="events.html" class="text-[#F4F5F0] font-semibold px-3 py-2 text-sm underline underline-offset-4">Eventos</a>
+          <a href="events.html" class="text-[#F4F5F0] underline underline-offset-4 font-semibold px-3 py-2 text-sm">Eventos</a>
           <a href="index.html#contacto" class="text-white hover:text-[#F4F5F0] px-3 py-2 text-sm font-medium">Contacto</a>
         </div>
         <div class="flex items-center">
@@ -40,22 +40,22 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="pt-28 pb-16 text-center bg-[#4D40AC] text-white" data-aos="fade-down">
-    <h1 class="text-4xl font-bold mb-4">Próximos Eventos</h1>
-    <p class="max-w-2xl mx-auto text-lg text-[#F4F5F0]">
-      Mantente al día con nuestras actividades, talleres y charlas sobre Inteligencia Artificial en la URJC.
-    </p>
-  </header>
+  <!-- Sección principal -->
+  <section id="eventos" class="pt-32 pb-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-down">
+      <h1 class="text-4xl font-bold text-[#221965] mb-6">Próximos Eventos</h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-600">
+        Descubre nuestras próximas actividades, talleres y charlas sobre Inteligencia Artificial en la URJC.
+      </p>
+    </div>
 
-  <!-- Events List -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Cards de eventos -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Evento 1 -->
-      <div class="bg-[#F4F5F0] rounded-xl border border-[#DDD] overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-[#F4F5F0] rounded-2xl border border-gray-200 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
         <img src="http://static.photos/technology/640x360/1" alt="Taller Machine Learning" class="w-full h-48 object-cover">
-        <div class="p-6">
+        <div class="p-6 text-left">
           <div class="flex items-center text-sm text-gray-600 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>15 Octubre 2023</span>
           </div>
@@ -71,9 +71,9 @@
       </div>
 
       <!-- Evento 2 -->
-      <div class="bg-[#F4F5F0] rounded-xl border border-[#DDD] overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-[#F4F5F0] rounded-2xl border border-gray-200 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
         <img src="http://static.photos/technology/640x360/2" alt="Charla Ética en IA" class="w-full h-48 object-cover">
-        <div class="p-6">
+        <div class="p-6 text-left">
           <div class="flex items-center text-sm text-gray-600 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>22 Octubre 2023</span>
           </div>
@@ -89,9 +89,9 @@
       </div>
 
       <!-- Evento 3 -->
-      <div class="bg-[#F4F5F0] rounded-xl border border-[#DDD] overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-[#F4F5F0] rounded-2xl border border-gray-200 overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
         <img src="http://static.photos/technology/640x360/3" alt="Hackathon de IA" class="w-full h-48 object-cover">
-        <div class="p-6">
+        <div class="p-6 text-left">
           <div class="flex items-center text-sm text-gray-600 mb-2">
             <i data-feather="calendar" class="h-4 w-4 mr-1"></i> <span>5 Noviembre 2023</span>
           </div>
@@ -107,9 +107,9 @@
       </div>
 
     </div>
-  </main>
+  </section>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer class="bg-[#221965] text-[#F4F5F0] py-8 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="md:flex md:items-center md:justify-between">
