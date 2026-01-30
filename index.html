@@ -9,11 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #221965 0%, #4D40AC 100%);
-        }
         .card-hover {
             transition: all 0.3s ease;
         }
@@ -30,13 +26,12 @@
     </style>
 </head>
 <body class="font-sans antialiased text-[#221965] bg-[#F4F5F0]">
-    <!-- Navbar -->
     <nav class="bg-[#F4F5F0] shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <a href="#inicio">
-                        <img class="h-10 w-10 rounded-full object-cover" src="logoaso.png" alt="AIA Logo">
+                        <img class="h-10 w-10 rounded-full object-cover" src="logoaso.png" alt="AIA Logo" onerror="this.src='https://via.placeholder.com/40'">
                     </a>
                 </div>
                 <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
@@ -46,7 +41,6 @@
                     <a href="#contacto" class="text-[#221965] hover:text-[#4D40AC] px-3 py-2 text-sm font-medium">Contacto</a>
                 </div>
 
-                <!-- Botón hamburguesa -->
                 <div class="-mr-2 flex items-center md:hidden">
                     <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] focus:outline-none transition">
                         <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,7 +52,6 @@
                     </button>
                 </div>
 
-                <!-- Menú móvil -->
                 <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-[#F4F5F0] shadow-lg rounded-lg absolute top-16 right-4 w-48 overflow-hidden transform transition-all duration-300 origin-top-right scale-95 opacity-0">
                     <a href="#inicio" class="px-4 py-2 text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition">Inicio</a>
                     <a href="events.html" class="px-4 py-2 text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition">Eventos</a>
@@ -69,57 +62,59 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="inicio" class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28 text-[#F4F5F0]" data-aos="fade">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Asociación de Inteligencia Artificial</h1>
-                <p class="text-xl mb-8">Comunidad de estudiantes de la Universidad Rey Juan Carlos apasionados por la IA y la tecnología.</p>
-                <div class="flex space-x-4">
-                    <a href="#unete" class="bg-[#F4F5F0] text-[#4D40AC] hover:bg-[#EAEAEA] px-6 py-3 rounded-lg font-medium shadow-md transition">Únete</a>
-                    <a href="#eventos" class="border-2 border-[#F4F5F0] hover:bg-[#F4F5F0] hover:text-[#4D40AC] px-6 py-3 rounded-lg font-medium transition">Próximos Eventos</a>
-                </div>
-            </div>
-            <div class="relative">
-                <div id="vanta-globe" class="w-full h-64 md:h-96 rounded-xl"></div>
+    <section id="inicio" class="relative pt-32 pb-28 flex items-center justify-center min-h-[600px] bg-[url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat" data-aos="fade">
+        
+        <div class="absolute inset-0 bg-black/60 bg-gradient-to-b from-[#221965]/80 to-[#4D40AC]/80"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#F4F5F0]">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md">Asociación de Inteligencia Artificial</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light text-gray-100">Comunidad de estudiantes de la Universidad Rey Juan Carlos apasionados por la IA y la tecnología.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#unete" class="bg-[#F4F5F0] text-[#4D40AC] hover:bg-[#EAEAEA] px-8 py-3 rounded-lg font-bold shadow-lg transition transform hover:-translate-y-1">Únete</a>
+                <a href="#eventos" class="border-2 border-[#F4F5F0] text-[#F4F5F0] hover:bg-[#F4F5F0] hover:text-[#4D40AC] px-8 py-3 rounded-lg font-bold transition transform hover:-translate-y-1">Próximos Eventos</a>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="py-20 bg-[#F4F5F0]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-[#4D40AC] mb-4" data-aos="fade-up">Sobre Nosotros</h2>
             <div class="w-20 h-1 bg-[#221965] mx-auto mb-6"></div>
-            <p class="max-w-2xl mx-auto text-[#221965]" data-aos="fade-up" data-aos-delay="100">
+            <p class="max-w-2xl mx-auto text-[#221965] mb-12" data-aos="fade-up" data-aos-delay="100">
                 La Asociación de Inteligencia Artificial (AIA) de la URJC nace con el objetivo de fomentar el aprendizaje y la investigación en IA entre los estudiantes.
             </p>
-            <div class="grid md:grid-cols-3 gap-8 mt-16">
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-[#4D40AC] mb-4"><i data-feather="cpu" class="h-10 w-10"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Investigación</h3>
-                    <p class="text-[#221965]">Promovemos proyectos de investigación en IA además de colaborar con la universidad.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover h-full flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-[#4D40AC] mb-4 p-3 bg-indigo-50 rounded-full"><i data-feather="cpu" class="h-8 w-8"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#221965]">Investigación</h3>
+                    <p class="text-[#221965] text-sm">Promovemos proyectos de investigación en IA entre estudiantes y colaboramos con departamentos de la universidad.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-[#4D40AC] mb-4"><i data-feather="users" class="h-10 w-10"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Comunidad</h3>
-                    <p class="text-[#221965]">Red donde todos pueden compartir conocimientos, experiencias e ideas sobre el mundo de la IA.</p>
+
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover h-full flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-[#4D40AC] mb-4 p-3 bg-indigo-50 rounded-full"><i data-feather="users" class="h-8 w-8"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#221965]">Comunidad</h3>
+                    <p class="text-[#221965] text-sm">Red donde todos pueden compartir conocimientos, experiencias e ideas sobre el mundo de la IA.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-[#4D40AC] mb-4"><i data-feather="award" class="h-10 w-10"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Formación</h3>
-                    <p class="text-[#221965]">Organizamos talleres, charlas y competiciones para mejorar las habilidades de nuestros miembros en IA.</p>
+
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover h-full flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-[#4D40AC] mb-4 p-3 bg-indigo-50 rounded-full"><i data-feather="award" class="h-8 w-8"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#221965]">Formación</h3>
+                    <p class="text-[#221965] text-sm">Organizamos talleres, charlas y competiciones para mejorar las habilidades de nuestros miembros en IA.</p>
                 </div>
-		<div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-[#4D40AC] mb-4"><i data-feather="brain" class="h-10 w-10"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Divulgación</h3>
-                    <p class="text-[#221965]">Acercamos la IA a cualquier público. Traduciendo complejidad a un lenguaje sencillo con tal de desmitificar la tecnología y fomentar el debate sobre su impacto ético y real.</p>
+
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover h-full flex flex-col items-center" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-[#4D40AC] mb-4 p-3 bg-indigo-50 rounded-full"><i data-feather="message-circle" class="h-8 w-8"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#221965]">Divulgación</h3>
+                    <p class="text-[#221965] text-sm">Acercamos la IA a cualquier público. Traduciendo complejidad a un lenguaje sencillo para desmitificar la tecnología.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Eventos -->
     <section id="eventos" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-[#4D40AC] mb-4" data-aos="fade-up">Próximos Eventos</h2>
@@ -127,29 +122,20 @@
             <p class="max-w-2xl mx-auto text-[#221965]" data-aos="fade-up" data-aos-delay="100">
                 Descubre los próximos talleres, charlas y eventos que hemos preparado para ti.
             </p>
-            <!-- Tarjetas -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
                 <div class="bg-[#F4F5F0] rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <img src="http://static.photos/technology/640x360/1" alt="Taller" class="w-full h-48 object-cover">
-                    <div class="p-6">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=640" alt="Taller" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
                         <h3 class="text-xl font-bold mb-2 text-[#221965]">Introducción a Machine Learning</h3>
                         <p class="text-[#221965] mb-4">Taller práctico para iniciarse en los fundamentos del aprendizaje automático.</p>
                         <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i></a>
                     </div>
                 </div>
                 <div class="bg-[#F4F5F0] rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <img src="http://static.photos/technology/640x360/2" alt="Charla" class="w-full h-48 object-cover">
-                    <div class="p-6">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=640" alt="Charla" class="w-full h-48 object-cover">
+                    <div class="p-6 text-left">
                         <h3 class="text-xl font-bold mb-2 text-[#221965]">Ética en IA</h3>
                         <p class="text-[#221965] mb-4">Charla sobre los desafíos éticos en el desarrollo de sistemas de inteligencia artificial.</p>
-                        <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i></a>
-                    </div>
-                </div>
-                <div class="bg-[#F4F5F0] rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="400">
-                    <img src="http://static.photos/technology/640x360/3" alt="Hackathon" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-[#221965]">Hackathon de IA</h3>
-                        <p class="text-[#221965] mb-4">Competición de 24 horas para desarrollar soluciones innovadoras usando IA.</p>
                         <a href="#" class="text-[#4D40AC] hover:text-[#221965] font-medium flex items-center">Más información <i data-feather="arrow-right" class="h-4 w-4 ml-1"></i></a>
                     </div>
                 </div>
@@ -164,7 +150,6 @@
         </div>
     </section>
 
-    <!-- Únete -->
     <section id="unete" class="py-20 bg-[#F4F5F0]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
@@ -183,7 +168,6 @@
         </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto" class="py-20 bg-[#221965] text-[#F4F5F0]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Contacta con nosotros</h2>
@@ -218,7 +202,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#4D40AC] text-[#F4F5F0] py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
             <div class="flex justify-center md:order-2 space-x-6 mb-6 md:mb-0">
@@ -234,19 +217,8 @@
         AOS.init();
         feather.replace();
 
-        VANTA.GLOBE({
-            el: "#vanta-globe",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x4D40AC,
-            backgroundColor: 0x221965,
-            size: 0.8
-        });
+        // NOTA: Se ha eliminado la configuración de VANTA.GLOBE porque ya no usamos ese elemento.
+        // Si quieres volver a usarlo, tendrás que restaurar el div con id="vanta-globe" y descomentar el script.
 
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
