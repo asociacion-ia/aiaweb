@@ -1,0 +1,539 @@
+---
+import logoaso from "../assets/logoaso.png";
+---
+
+<nav class="bg-[#F4F5F0] shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <a href="#inicio" class="flex items-center gap-3">
+                    <img
+                        class="h-10 w-10 rounded-lg object-contain shadow-sm"
+                        src={logoaso.src}
+                        alt="AIA Logo"
+                    />
+                    <span
+                        class="font-black text-[#221965] tracking-tight hidden sm:block"
+                        >AIA URJC</span
+                    >
+                </a>
+            </div>
+
+            <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                <a
+                    href="/"
+                    class="text-[#4D40AC] hover:text-[#221965] px-3 py-2 text-sm font-medium transition-colors"
+                    data-i18n="nav.inicio">Inicio</a
+                >
+                <a
+                    href="/#sobre-nosotros"
+                    class="text-[#221965] hover:text-[#4D40AC] px-3 py-2 text-sm font-medium transition-colors"
+                    data-i18n="nav.sobre">Sobre Nosotros</a
+                >
+                <a
+                    href="/hackaton"
+                    class="text-[#221965] hover:text-[#4D40AC] px-3 py-2 text-sm font-medium transition-colors"
+                    data-i18n="nav.hackaton">Hackathon</a
+                >
+                <a
+                    href="/#contacto"
+                    class="text-[#221965] hover:text-[#4D40AC] px-3 py-2 text-sm font-medium transition-colors"
+                    data-i18n="nav.contacto">Contacto</a
+                >
+            </div>
+
+            <!-- Dark mode toggle + mobile hamburger -->
+            <div class="flex items-center gap-2">
+                <!-- Dark Mode Toggle -->
+                <button
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Cambiar modo"
+                    class="p-2 rounded-lg text-[#221965] hover:bg-[#4D40AC]/10 transition-colors duration-200 focus:outline-none"
+                >
+                    <!-- Sun icon (shown in dark mode) -->
+                    <svg
+                        id="icon-sun"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 hidden"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <circle cx="12" cy="12" r="5"></circle><line
+                            x1="12"
+                            y1="1"
+                            x2="12"
+                            y2="3"></line><line x1="12" y1="21" x2="12" y2="23"
+                        ></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"
+                        ></line><line
+                            x1="18.36"
+                            y1="18.36"
+                            x2="19.78"
+                            y2="19.78"></line><line
+                            x1="1"
+                            y1="12"
+                            x2="3"
+                            y2="12"></line><line x1="21" y1="12" x2="23" y2="12"
+                        ></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"
+                        ></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"
+                        ></line>
+                    </svg>
+                    <!-- Moon icon (shown in light mode) -->
+                    <svg
+                        id="icon-moon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                        ></path>
+                    </svg>
+                </button>
+
+                <!-- Language Toggle -->
+                <button
+                    id="lang-toggle"
+                    type="button"
+                    aria-label="Cambiar idioma"
+                    class="px-2 py-1 rounded-lg text-[10px] font-black text-[#221965] border border-[#221965]/20 hover:bg-[#4D40AC]/10 transition-colors duration-200 focus:outline-none tracking-widest"
+                >
+                    EN
+                </button>
+
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button
+                        id="menu-btn"
+                        type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] focus:outline-none transition-colors"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                    >
+                        <span class="sr-only">Abrir menú</span>
+                        <svg
+                            id="icon-menu"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 block"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg
+                            id="icon-close"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 hidden"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#F4F5F0] shadow-lg absolute w-full left-0 top-16 transition-all duration-300 ease-in-out opacity-0 -translate-y-2 origin-top"
+    >
+        <div class="px-4 py-2 flex flex-col space-y-2 pb-4">
+            <a
+                href="/"
+                class="block px-3 py-2 rounded-md text-base font-medium text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition-colors"
+                data-i18n="nav.inicio">Inicio</a
+            >
+            <a
+                href="/#sobre-nosotros"
+                class="block px-3 py-2 rounded-md text-base font-medium text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition-colors"
+                data-i18n="nav.sobre">Sobre nosotros</a
+            >
+            <a
+                href="/hackaton"
+                class="block px-3 py-2 rounded-md text-base font-medium text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition-colors"
+                data-i18n="nav.hackaton">Hackathon</a
+            >
+            <a
+                href="/#contacto"
+                class="block px-3 py-2 rounded-md text-base font-medium text-[#221965] hover:bg-[#4D40AC] hover:text-[#F4F5F0] transition-colors"
+                data-i18n="nav.contacto">Contacto</a
+            >
+        </div>
+    </div>
+</nav>
+
+<script>
+    // ---- Initialize theme from localStorage (prevent flash) ----
+    function applyTheme() {
+        const isDark = localStorage.getItem("theme") === "dark";
+        document.documentElement.classList.toggle("dark", isDark);
+        const sun = document.getElementById("icon-sun");
+        const moon = document.getElementById("icon-moon");
+        if (sun && moon) {
+            sun.classList.toggle("hidden", !isDark);
+            moon.classList.toggle("hidden", isDark);
+        }
+    }
+
+    function setupThemeToggle() {
+        const btn = document.getElementById("theme-toggle");
+        if (btn) {
+            btn.addEventListener("click", () => {
+                const isDark =
+                    document.documentElement.classList.toggle("dark");
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+                const sun = document.getElementById("icon-sun");
+                const moon = document.getElementById("icon-moon");
+                if (sun && moon) {
+                    sun.classList.toggle("hidden", !isDark);
+                    moon.classList.toggle("hidden", isDark);
+                }
+            });
+        }
+    }
+
+    // ---- i18n Translations ----
+    const translations = {
+        es: {
+            "nav.inicio": "Inicio",
+            "nav.sobre": "Sobre Nosotros",
+            "nav.hackaton": "Hackathon",
+            "nav.contacto": "Contacto",
+            "hero.title": "Hackathon de IA",
+            "hero.desc":
+                "el hackathon de inteligencia artificial donde podrás ganar currículum, aprender de expertos y hacer contactos con personas del sector.",
+            "hero.btn.register": "Inscríbeme",
+            "hero.btn.date": "14-16 de abril",
+            "about.suptitle": "Detalles del Evento",
+            "about.desc":
+                "Únete a la competición insignia de la AIA. Tres retos diseñados para poner a prueba tus habilidades y conectarte con el futuro de la tecnología.",
+            "about.free.title": "Entrada Gratuita",
+            "about.free.desc":
+                "Participa sin coste alguno en el evento tecnológico más importante del campus. ¡No pierdas tu plaza!",
+            "about.teams.title": "Equipos Flexibles",
+            "about.teams.desc":
+                "Colabora en grupos de 1 a 5 personas para desarrollar las soluciones más innovadoras y competitivas.",
+            "about.challenges.title": "3 Retos a Elegir",
+            "about.challenges.desc":
+                "Especialízate en ML/DL, Optimización y Metaheurísticas, o Agentes y Aprendizaje por Refuerzo.",
+            "benefits.suptitle": "¿Qué te espera?",
+            "benefits.title": "Vive la experiencia completa.",
+            "benefits.prizes.title": "Premios",
+            "benefits.prizes.desc":
+                "Reconocimiento y galardones para los mejores proyectos.",
+            "benefits.talks.title": "Charlas",
+            "benefits.talks.desc":
+                "Aprende de expertos de primer nivel en la industria de la IA.",
+            "benefits.food.title": "Picoteo",
+            "benefits.food.desc":
+                "Comida y bebida incluida para que no pares de innovar.",
+            "benefits.credits.title": "Créditos",
+            "benefits.credits.desc":
+                "Obtén créditos ECTs oficiales para estudiantes de la URJC.",
+            "benefits.hybrid.title": "Híbrido",
+            "benefits.hybrid.desc":
+                "Participa de forma presencial u online, tú eliges.",
+            "benefits.networking.title": "Networking",
+            "benefits.networking.desc":
+                "Conecta con otros apasionados y empresas del sector.",
+            "challenges.title": "Elige tu desafío",
+            "challenges.desc":
+                "Cada equipo deberá seleccionar una única categoría estratégica.",
+            "challenges.status.open": "Inscripciones Abiertas",
+            "challenges.status.limited": "⚠️ Plazas Limitadas",
+            "challenges.ml.id": "RETO 01",
+            "challenges.ml.title": "ML / DL",
+            "challenges.ml.desc":
+                "Aplica técnicas de Machine Learning y Deep Learning para resolver problemas complejos de clasificación, predicción o generación.",
+            "challenges.opt.id": "RETO 02",
+            "challenges.opt.title": "Optimización",
+            "challenges.opt.desc":
+                "Metaheurísticas y algoritmos de optimización avanzada para encontrar soluciones eficientes en escenarios de alta complejidad.",
+            "challenges.rl.id": "RETO 03",
+            "challenges.rl.title": "Agentes / RL",
+            "challenges.rl.desc":
+                "Desarrollo de agentes inteligentes y Aprendizaje por Refuerzo para la toma de decisiones estratégicas autónomas.",
+            "challenges.btn.register": "Inscribirse al Hackathon",
+            "location.title": "Sede del Evento",
+            "location.desc":
+                "Te esperamos en el Campus de Móstoles de la URJC, un espacio diseñado para la innovación y el desarrollo tecnológico.",
+            "location.lab": "Laboratorios de Informática",
+            "location.address": "Calle Tulipán, s/n, 28933 Móstoles.",
+            "location.building": "Edificio Departamental (Laboratorios de IA).",
+            "location.facilities":
+                "Contamos con instalaciones de última generación y un ambiente perfecto para trabajar en equipo durante las 48 horas del hackathon.",
+            "location.maps.btn": "Ver en Google Maps",
+            "location.maps.hover": "Ver ubicación exacta",
+            // Home page
+            "home.hero.title": "Asociación de Inteligencia Artificial",
+            "home.hero.desc":
+                "Comunidad de estudiantes de la Universidad Rey Juan Carlos apasionados por la IA y la tecnología.",
+            "home.hero.btn.join": "Únete",
+            "home.hero.btn.events": "Próximos Eventos",
+            "home.about.title": "Sobre Nosotros",
+            "home.about.desc":
+                "La Asociación de Inteligencia Artificial (AIA) de la URJC nace con el objetivo de fomentar el aprendizaje y la investigación en IA entre los estudiantes.",
+            "home.about.research.title": "Investigación",
+            "home.about.research.desc":
+                "Promovemos proyectos de investigación en IA entre estudiantes y colaboramos con departamentos de la universidad.",
+            "home.about.community.title": "Comunidad",
+            "home.about.community.desc":
+                "Creamos un espacio donde los estudiantes pueden compartir conocimientos y experiencias sobre IA.",
+            "home.about.training.title": "Formación",
+            "home.about.training.desc":
+                "Organizamos talleres, charlas y competiciones para mejorar las habilidades de nuestros miembros en IA.",
+            "home.join.title": "Únete a nuestra comunidad",
+            "home.join.desc":
+                "Como miembro de AIA tendrás acceso a eventos, recursos exclusivos y oportunidades para conectar con otros estudiantes apasionados por la IA.",
+            "home.join.li1": "Acceso prioritario a todos nuestros eventos",
+            "home.join.li2": "Recursos y materiales exclusivos",
+            "home.join.li3": "Networking con profesionales",
+            "home.join.btn": "Hazte socio ahora",
+            "home.footer.copy":
+                "&copy; 2025 Asociación de Inteligencia Artificial (AIA) - URJC. Todos los derechos reservados.",
+            // Hackaton preview (index)
+            "hackaton.title": "Gran Hackathon de IA 2025",
+            "hackaton.desc":
+                "48 horas para crear, innovar y revolucionar. Únete a los mejores talentos de la URJC, forma equipo y desarrolla soluciones que definan el futuro de la inteligencia artificial.",
+            "hackaton.when.label": "¿Cuándo?",
+            "hackaton.when.date": "15-17 de Noviembre",
+            "hackaton.prizes.label": "Premios",
+            "hackaton.prizes.desc": "Hasta un bocata de chope para repartir",
+            "hackaton.btn.register": "¡Inscríbete Ahora!",
+            "hackaton.btn.bases": "Ver Bases",
+            "hackaton.location": "📍 Lugar: Campus de Móstoles, URJC",
+            // Events section (index)
+            "events.title": "Próximos Eventos",
+            "events.desc":
+                "Descubre los próximos talleres, charlas y eventos que hemos preparado para ti.",
+            "events.e1.title": "Jornadas de Cultura Libre",
+            "events.e1.desc":
+                "Un espacio donde conocer más acerca del sector de la inteligencia artificial en la ciencia abierta gracias al espacio dado por Ofilibre.",
+            "events.e2.title": "Talleres sobre IA",
+            "events.e2.desc":
+                "Abolimos la brecha generacional a través de didácticos talleres que fomentan el aprendizaje para todas las edades.",
+            "events.e3.title": "Hackathon de IA",
+            "events.e3.desc":
+                "¡Nuestro evento más interesante! Competición de desarrollo para dar soluciones a problemas reales, iterando en comunidad.",
+            "events.more": "Más información",
+            "events.btn.all": "Ver todos los eventos",
+        },
+        en: {
+            "nav.inicio": "Home",
+            "nav.sobre": "About Us",
+            "nav.hackaton": "Hackathon",
+            "nav.contacto": "Contact",
+            "hero.title": "AI Hackathon",
+            "hero.desc":
+                "the artificial intelligence hackathon where you can boost your resume, learn from experts and build connections in the industry.",
+            "hero.btn.register": "Sign me up",
+            "hero.btn.date": "April 14-16",
+            "about.suptitle": "Event Details",
+            "about.desc":
+                "Join AIA's flagship competition. Three challenges designed to put your skills to the test and connect you with the future of technology.",
+            "about.free.title": "Free Entry",
+            "about.free.desc":
+                "Participate at no cost in the most important tech event on campus. Don't miss your spot!",
+            "about.teams.title": "Flexible Teams",
+            "about.teams.desc":
+                "Collaborate in groups of 1 to 5 people to develop the most innovative and competitive solutions.",
+            "about.challenges.title": "3 Challenges to Choose",
+            "about.challenges.desc":
+                "Specialize in ML/DL, Optimization & Metaheuristics, or Agents and Reinforcement Learning.",
+            "benefits.suptitle": "What's in store?",
+            "benefits.title": "Live the full experience.",
+            "benefits.prizes.title": "Prizes",
+            "benefits.prizes.desc":
+                "Recognition and awards for the best projects.",
+            "benefits.talks.title": "Talks",
+            "benefits.talks.desc":
+                "Learn from top-level experts in the AI industry.",
+            "benefits.food.title": "Catering",
+            "benefits.food.desc":
+                "Food and drinks included so you never stop innovating.",
+            "benefits.credits.title": "Credits",
+            "benefits.credits.desc":
+                "Earn official ECTS credits as a URJC student.",
+            "benefits.hybrid.title": "Hybrid",
+            "benefits.hybrid.desc":
+                "Participate in person or online, your choice.",
+            "benefits.networking.title": "Networking",
+            "benefits.networking.desc":
+                "Connect with fellow enthusiasts and industry companies.",
+            "challenges.title": "Choose your challenge",
+            "challenges.desc":
+                "Each team must select a single strategic category.",
+            "challenges.status.open": "Registrations Open",
+            "challenges.status.limited": "⚠️ Limited Spots",
+            "challenges.ml.id": "CHALLENGE 01",
+            "challenges.ml.title": "ML / DL",
+            "challenges.ml.desc":
+                "Apply Machine Learning and Deep Learning techniques to solve complex classification, prediction or generation problems.",
+            "challenges.opt.id": "CHALLENGE 02",
+            "challenges.opt.title": "Optimization",
+            "challenges.opt.desc":
+                "Metaheuristics and advanced optimization algorithms to find efficient solutions in high-complexity scenarios.",
+            "challenges.rl.id": "CHALLENGE 03",
+            "challenges.rl.title": "Agents / RL",
+            "challenges.rl.desc":
+                "Development of intelligent agents and Reinforcement Learning for autonomous strategic decision-making.",
+            "challenges.btn.register": "Register for the Hackathon",
+            "location.title": "Event Venue",
+            "location.desc":
+                "We'll be waiting for you at the URJC Móstoles Campus, a space designed for innovation and technological development.",
+            "location.lab": "Computer Science Labs",
+            "location.address": "Calle Tulipán, s/n, 28933 Móstoles.",
+            "location.building": "Departmental Building (AI Labs).",
+            "location.facilities":
+                "We have state-of-the-art facilities and the perfect environment to work as a team during the 48-hour hackathon.",
+            "location.maps.btn": "View on Google Maps",
+            "location.maps.hover": "View exact location",
+            // Home page
+            "home.hero.title": "Association of Artificial Intelligence",
+            "home.hero.desc":
+                "Student community at Universidad Rey Juan Carlos passionate about AI and technology.",
+            "home.hero.btn.join": "Join us",
+            "home.hero.btn.events": "Upcoming Events",
+            "home.about.title": "About Us",
+            "home.about.desc":
+                "The Artificial Intelligence Association (AIA) at URJC was created to foster learning and research in AI among students.",
+            "home.about.research.title": "Research",
+            "home.about.research.desc":
+                "We promote AI research projects among students and collaborate with university departments.",
+            "home.about.community.title": "Community",
+            "home.about.community.desc":
+                "We create a space where students can share knowledge and experiences about AI.",
+            "home.about.training.title": "Training",
+            "home.about.training.desc":
+                "We organize workshops, talks and competitions to improve our members' AI skills.",
+            "home.join.title": "Join our community",
+            "home.join.desc":
+                "As an AIA member you'll have access to events, exclusive resources and opportunities to connect with other AI enthusiasts.",
+            "home.join.li1": "Priority access to all our events",
+            "home.join.li2": "Exclusive resources and materials",
+            "home.join.li3": "Networking with professionals",
+            "home.join.btn": "Become a member now",
+            "home.footer.copy":
+                "&copy; 2025 Artificial Intelligence Association (AIA) - URJC. All rights reserved.",
+            // Hackaton preview (index)
+            "hackaton.title": "Big AI Hackathon 2025",
+            "hackaton.desc":
+                "48 hours to create, innovate and revolutionize. Join the best talents at URJC, form a team and build solutions that define the future of artificial intelligence.",
+            "hackaton.when.label": "When?",
+            "hackaton.when.date": "November 15-17",
+            "hackaton.prizes.label": "Prizes",
+            "hackaton.prizes.desc": "Up for grabs",
+            "hackaton.btn.register": "Register Now!",
+            "hackaton.btn.bases": "View Rules",
+            "hackaton.location": "📍 Venue: Móstoles Campus, URJC",
+            // Events section (index)
+            "events.title": "Upcoming Events",
+            "events.desc":
+                "Discover the upcoming workshops, talks and events we have prepared for you.",
+            "events.e1.title": "Open Culture Days",
+            "events.e1.desc":
+                "A space to learn more about the AI sector in open science, thanks to Ofilibre.",
+            "events.e2.title": "AI Workshops",
+            "events.e2.desc":
+                "We bridge the generational gap through educational workshops that promote learning for all ages.",
+            "events.e3.title": "AI Hackathon",
+            "events.e3.desc":
+                "Our most exciting event! A development competition to solve real-world problems, iterating as a community.",
+            "events.more": "More info",
+            "events.btn.all": "View all events",
+        },
+    };
+
+    function applyLang(/** @type {"es"|"en"} */ lang) {
+        const t = translations[/** @type {keyof typeof translations} */ (lang)];
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            const val = key
+                ? t[/** @type {keyof typeof t} */ (key)]
+                : undefined;
+            if (val !== undefined) {
+                el.innerHTML = val;
+            }
+        });
+        // Update toggle label to show opposite lang
+        const btn = document.getElementById("lang-toggle");
+        if (btn) btn.textContent = lang === "es" ? "EN" : "ES";
+    }
+
+    function setupLangToggle() {
+        const btn = document.getElementById("lang-toggle");
+        if (btn) {
+            btn.addEventListener("click", () => {
+                const current = localStorage.getItem("lang") || "es";
+                const next = current === "es" ? "en" : "es";
+                localStorage.setItem("lang", next);
+                applyLang(next);
+            });
+        }
+    }
+
+    // ---- Mobile menu ----
+    function setupMenu() {
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const iconMenu = document.getElementById("icon-menu");
+        const iconClose = document.getElementById("icon-close");
+
+        if (btn && menu && iconMenu && iconClose) {
+            btn.addEventListener("click", () => {
+                const isExpanded = btn.getAttribute("aria-expanded") === "true";
+                btn.setAttribute("aria-expanded", String(!isExpanded));
+
+                if (menu.classList.contains("hidden")) {
+                    menu.classList.remove("hidden");
+                    setTimeout(() => {
+                        menu.classList.remove("opacity-0", "-translate-y-2");
+                        menu.classList.add("opacity-100", "translate-y-0");
+                    }, 10);
+                    iconMenu.classList.add("hidden");
+                    iconClose.classList.remove("hidden");
+                } else {
+                    menu.classList.remove("opacity-100", "translate-y-0");
+                    menu.classList.add("opacity-0", "-translate-y-2");
+                    setTimeout(() => {
+                        menu.classList.add("hidden");
+                    }, 300);
+                    iconMenu.classList.remove("hidden");
+                    iconClose.classList.add("hidden");
+                }
+            });
+        }
+    }
+
+    function init() {
+        applyTheme();
+        setupThemeToggle();
+        const lang = localStorage.getItem("lang") || "es";
+        applyLang(lang);
+        setupLangToggle();
+        setupMenu();
+    }
+
+    init();
+    document.addEventListener("astro:after-swap", init);
+</script>

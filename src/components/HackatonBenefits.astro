@@ -1,0 +1,95 @@
+---
+const benefits = [
+    {
+        titleKey: "benefits.prizes.title",
+        descKey: "benefits.prizes.desc",
+        title: "Premios",
+        desc: "Reconocimiento y galardones para los mejores proyectos.",
+        icon: "🏆",
+    },
+    {
+        titleKey: "benefits.talks.title",
+        descKey: "benefits.talks.desc",
+        title: "Charlas",
+        desc: "Aprende de expertos de primer nivel en la industria de la IA.",
+        icon: "🔥",
+    },
+    {
+        titleKey: "benefits.food.title",
+        descKey: "benefits.food.desc",
+        title: "Picoteo",
+        desc: "Comida y bebida incluida para que no pares de innovar.",
+        icon: "🍕",
+    },
+    {
+        titleKey: "benefits.credits.title",
+        descKey: "benefits.credits.desc",
+        title: "Créditos",
+        desc: "Obtén créditos ECTs oficiales para estudiantes de la URJC.",
+        icon: "🎓",
+    },
+    {
+        titleKey: "benefits.hybrid.title",
+        descKey: "benefits.hybrid.desc",
+        title: "Híbrido",
+        desc: "Participa de forma presencial u online, tú eliges.",
+        icon: "🌐",
+    },
+    {
+        titleKey: "benefits.networking.title",
+        descKey: "benefits.networking.desc",
+        title: "Networking",
+        desc: "Conecta con otros apasionados y empresas del sector.",
+        icon: "🤝",
+    },
+];
+---
+
+<section id="beneficios" class="py-32 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-20" data-aos="fade-up">
+            <h2
+                class="text-[#4D40AC] font-black text-xl uppercase tracking-[0.3em] mb-4"
+                data-i18n="benefits.suptitle"
+            >
+                ¿Qué te espera?
+            </h2>
+            <h3
+                class="text-4xl md:text-6xl font-black text-[#221965] mb-8"
+                data-i18n="benefits.title"
+            >
+                Vive la experiencia completa.
+            </h3>
+            <div class="h-1.5 w-32 bg-[#4D40AC] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {
+                benefits.map((benefit, index) => (
+                    <div
+                        class="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:border-[#4D40AC]/20 transition-all duration-500"
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                    >
+                        <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-500 origin-left">
+                            {benefit.icon}
+                        </div>
+                        <h4
+                            class="text-xl font-black text-[#221965] mb-3"
+                            data-i18n={benefit.titleKey}
+                        >
+                            {benefit.title}
+                        </h4>
+                        <p
+                            class="text-gray-500 leading-relaxed text-sm"
+                            data-i18n={benefit.descKey}
+                        >
+                            {benefit.desc}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

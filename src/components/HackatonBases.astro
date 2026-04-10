@@ -1,0 +1,27 @@
+---
+import HackatonBenefits from "./HackatonBenefits.astro";
+import HackatonChallenges from "./HackatonChallenges.astro";
+---
+
+<section id="bases" class="py-32 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-20" data-aos="fade-up">
+            <h2
+                class="text-[#4D40AC] font-black text-xl uppercase tracking-[0.3em] mb-4"
+            >
+                ¿Qué te espera?
+            </h2>
+            <h3 class="text-4xl md:text-6xl font-black text-[#221965] mb-8">
+                Vive la experiencia completa.
+            </h3>
+            <div class="h-1.5 w-32 bg-[#4D40AC] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Component 1: Benefits -->
+        <HackatonBenefits />
+
+        <!-- Component 2: Challenges & Logistics -->
+        <HackatonChallenges />
+    </div>
+</section>

@@ -1,0 +1,62 @@
+---
+import HackatonChallengeList from "./HackatonChallengeList.astro";
+---
+
+<section id="retos" class="py-24 bg-[#F4F5F0] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2
+                class="text-3xl md:text-4xl font-bold text-[#4D40AC] mb-4"
+                data-i18n="challenges.title"
+            >
+                Elige tu desafío
+            </h2>
+            <div class="h-1 w-24 bg-[#221965] mx-auto rounded-full mb-6"></div>
+            <p
+                class="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed mb-8"
+                data-i18n="challenges.desc"
+            >
+                Cada equipo deberá seleccionar una única categoría estratégica. <br
+                    class="hidden md:block"
+                />
+                No lo pienses más, elige tu camino y empieza a construir.
+            </p>
+
+            <!-- Status Labels -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <div
+                    class="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-green-100 shadow-sm transition-all hover:shadow-md"
+                >
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                        ></span>
+                        <span
+                            class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+                        ></span>
+                    </span>
+                    <span
+                        class="text-xs font-black text-green-700 uppercase tracking-widest"
+                        data-i18n="challenges.status.open"
+                        >Inscripciones Abiertas</span
+                    >
+                </div>
+                <div
+                    class="px-4 py-2 rounded-full bg-white border border-amber-100 shadow-sm transition-all hover:shadow-md"
+                >
+                    <span
+                        class="text-xs font-black text-amber-700 uppercase tracking-widest"
+                        data-i18n="challenges.status.limited"
+                        >⚠️ Plazas Limitadas</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges Section -->
+        <div class="mb-16">
+            <HackatonChallengeList />
+        </div>
+    </div>
+</section>

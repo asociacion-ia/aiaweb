@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ============================================================
+   DARK MODE OVERRIDES
+   Toggle via: html.dark class
+   Brand purples (#4D40AC, #221965) remain unchanged
+   Only white/light ↔ black/dark swap
+   ============================================================ */
+
+/* Persist dark background on the document */
+html.dark body {
+    background-color: #0f0e1a;
+    color: #e8e4ff;
+}
+
+/* White backgrounds → deep dark */
+html.dark .bg-white {
+    background-color: #1a1733 !important;
+}
+
+/* Light gray (#F4F5F0 nav, sections) → very dark */
+html.dark .bg-\[\#F4F5F0\] {
+    background-color: #0f0e1a !important;
+}
+
+/* Brand section background used in some sections */
+html.dark section.bg-white {
+    background-color: #0f0e1a !important;
+}
+
+/* ---- Text colors ---- */
+html.dark .text-\[\#221965\] {
+    color: #e8e4ff !important;
+}
+html.dark .text-gray-600 {
+    color: #b0a8cc !important;
+}
+html.dark .text-gray-700 {
+    color: #c8c0e0 !important;
+}
+html.dark .text-gray-500 {
+    color: #9890b4 !important;
+}
+html.dark .text-gray-400 {
+    color: #7870a0 !important;
+}
+
+/* ---- Borders ---- */
+html.dark .border-gray-100 {
+    border-color: #2a2548 !important;
+}
+html.dark .border-gray-200 {
+    border-color: #332e58 !important;
+}
+
+/* ---- Cards & boxes ---- */
+html.dark .shadow-sm {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+}
+
+/* ---- Navbar ---- */
+html.dark nav.bg-\[\#F4F5F0\] {
+    background-color: #0f0e1a !important;
+}

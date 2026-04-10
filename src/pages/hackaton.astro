@@ -1,0 +1,56 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import HackatonHero from "../components/HackatonHero.astro";
+import HackatonLocation from "../components/HackatonLocation.astro";
+import HackatonAbout from "../components/HackatonAbout.astro";
+import HackatonBenefits from "../components/HackatonBenefits.astro";
+import HackatonChallenges from "../components/HackatonChallenges.astro";
+---
+
+<Layout>
+    <Navbar />
+
+    <main class="bg-white">
+        <HackatonHero />
+        <HackatonAbout />
+        <HackatonChallenges />
+        <HackatonBenefits />
+        <HackatonLocation />
+
+        <!-- Final Call to Action or Return -->
+        <section class="py-20 bg-white text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <a
+                    href="/"
+                    class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl text-[#F4F5F0] bg-[#4D40AC] hover:bg-[#221965] shadow-lg transition-all duration-300 transform hover:-translate-y-1 group"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 mr-3 transition-transform group-hover:-translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Volver al Inicio
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>
+
+<style>
+    /* Ensure AOS animations work properly */
+    body {
+        overflow-x: hidden;
+    }
+</style>
