@@ -6,31 +6,34 @@ const challenges = [
         titleKey: "challenges.ml.title",
         descKey: "challenges.ml.desc",
         idKey: "challenges.ml.id",
-        title: "ML / DL",
+        title: "Reto 1",
         description:
-            "Aplica técnicas de Machine Learning y Deep Learning para resolver problemas complejos de clasificación, predicción o generación.",
-        icon: "🧠",
+            "Reto de nivel principiante para introducirte en el mundo de la IA.",
+        icon: "🌱",
         id: "RETO 01",
+        link: "https://grafo-hackathon-ia.streamlit.app/Reto_Principiante",
     },
     {
         titleKey: "challenges.opt.title",
         descKey: "challenges.opt.desc",
         idKey: "challenges.opt.id",
-        title: "Optimización",
+        title: "Reto 2 ML",
         description:
-            "Metaheurísticas y algoritmos de optimización avanzada para encontrar soluciones eficientes en escenarios de alta complejidad.",
-        icon: "⚙️",
+            "Aplica técnicas de Machine Learning y Deep Learning para resolver problemas complejos de clasificación y predicción.",
+        icon: "🧠",
         id: "RETO 02",
+        link: "https://github.com/maybepueblo/Breaking-Data-Reto-2",
     },
     {
         titleKey: "challenges.rl.title",
         descKey: "challenges.rl.desc",
         idKey: "challenges.rl.id",
-        title: "Agentes / RL",
+        title: "Reto 3",
         description:
-            "Desarrollo de agentes inteligentes y Aprendizaje por Refuerzo para la toma de decisiones estratégicas autónomas.",
+            "Desafío avanzado para poner a prueba tus habilidades de programación y lógica.",
         icon: "🤖",
         id: "RETO 03",
+        link: "https://github.com/KaiserAI/Breaking-Data-Reto-3",
     },
 ];
 ---
@@ -48,6 +51,7 @@ const challenges = [
                     titleKey={challenge.titleKey}
                     descKey={challenge.descKey}
                     idKey={challenge.idKey}
+                    link={challenge.link}
                     data-aos-delay={index * 100}
                 />
             ))

@@ -7,9 +7,11 @@ interface Props {
     titleKey: string;
     descKey: string;
     idKey: string;
+    link: string;
 }
 
-const { title, description, icon, id, titleKey, descKey, idKey } = Astro.props;
+const { title, description, icon, id, titleKey, descKey, idKey, link } =
+    Astro.props;
 ---
 
 <div
@@ -36,7 +38,18 @@ const { title, description, icon, id, titleKey, descKey, idKey } = Astro.props;
         {title}
     </h3>
 
-    <p class="text-gray-600 leading-relaxed text-sm" data-i18n={descKey}>
+    <p class="text-gray-600 leading-relaxed text-sm mb-8" data-i18n={descKey}>
         {description}
     </p>
+
+    <div class="mt-auto w-full">
+        <a
+            href={link}
+            target="_blank"
+            class="inline-flex items-center justify-center w-full px-6 py-3 text-sm font-bold text-white bg-[#4D40AC] rounded-xl hover:bg-[#3d328a] transition-colors duration-300"
+            data-i18n="challenges.btn.view"
+        >
+            Ver Reto
+        </a>
+    </div>
 </div>
