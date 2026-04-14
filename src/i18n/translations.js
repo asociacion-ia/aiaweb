@@ -111,7 +111,7 @@ export const translations = {
         "challenges.status.limited": "⚠️ Limited Spots",
         "challenges.ml.id": "CHALLENGE 01",
         "challenges.ml.title": "Challenge 1: Beginner",
-        "challenges.ml.desc": "Beginner level challenge to introduce you to the world of AI and data processing.",
+        "challenges.ml.desc": "Apply advanced algorithmic techniques to solve problems.",
         "challenges.opt.id": "CHALLENGE 02",
         "challenges.opt.title": "Challenge 2: ML / DL",
         "challenges.opt.desc": "Apply Machine Learning and Deep Learning techniques to solve complex classification and prediction problems.",
