@@ -41,7 +41,7 @@ export const translations = {
         // Challenges
         "challenges.title": "Elige tu desafío",
         "challenges.desc": "Cada equipo deberá seleccionar una única categoría estratégica.<br>No lo pienses más, elige tu camino y empieza a construir.",
-        "challenges.status.open": "Inscripciones Abiertas",
+        "challenges.status.open": "Inscripciones Cerradas",
         "challenges.status.limited": "⚠️ Plazas Limitadas",
         "challenges.ml.id": "RETO 01",
         "challenges.ml.title1": "Reto 1: Optimización.",
@@ -52,7 +52,7 @@ export const translations = {
         "challenges.rl.id": "RETO 03",
         "challenges.rl.title": "Reto 3: Agentes",
         "challenges.rl.desc": "Pon a prueba tus habilidades a través del entreno de agentes.",
-        "challenges.btn.register": "Inscribirse al Hackathon",
+        "challenges.btn.register": "Inscripción cerrada",
         "challenges.btn.view": "Ver Reto",
 
         // Location
