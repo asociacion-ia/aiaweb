@@ -110,7 +110,7 @@ export const translations = {
         "challenges.status.open": "Registrations Open",
         "challenges.status.limited": "⚠️ Limited Spots",
         "challenges.ml.id": "CHALLENGE 01",
-        "challenges.ml.title": "Challenge 1: Beginner",
+        "challenges.ml.title1": "Challenge 1: Beginner",
         "challenges.ml.desc": "Apply advanced algorithmic techniques to solve problems.",
         "challenges.opt.id": "CHALLENGE 02",
         "challenges.opt.title": "Challenge 2: ML / DL",
