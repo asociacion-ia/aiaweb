@@ -45,7 +45,7 @@ export const translations = {
         "challenges.status.limited": "⚠️ Plazas Limitadas",
         "challenges.ml.id": "RETO 01",
         "challenges.ml.title": "Reto 1: Optimización.",
-        "challenges.ml.desc": "Aplicar técnicas avanzadas de algoritmia para resolver problemas.",
+        "challenges.ml.desc": "Técnicas avanzadas de algoritmia para resolver problemas.",
         "challenges.opt.id": "RETO 02",
         "challenges.opt.title": "Reto 2: ML / DL",
         "challenges.opt.desc": "Aplica técnicas de Machine Learning y Deep Learning para resolver problemas complejos de clasificación y predicción.",
