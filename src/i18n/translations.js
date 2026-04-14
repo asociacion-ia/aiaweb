@@ -44,7 +44,7 @@ export const translations = {
         "challenges.status.open": "Inscripciones Abiertas",
         "challenges.status.limited": "⚠️ Plazas Limitadas",
         "challenges.ml.id": "RETO 01",
-        "challenges.ml.title": "Reto 1: Optimización.",
+        "challenges.ml.title1": "Reto 1: Optimización.",
         "challenges.ml.desc": "Técnicas avanzadas de algoritmia para resolver problemas.",
         "challenges.opt.id": "RETO 02",
         "challenges.opt.title": "Reto 2: ML / DL",
