@@ -9,7 +9,7 @@ export const translations = {
         // Hero Hackaton
         "hero.title": "Hackathon de IA",
         "hero.desc": "el hackathon de inteligencia artificial donde podrás ganar currículum, aprender de expertos y hacer contactos con personas del sector.",
-        "hero.btn.register": "Inscríbeme",
+        "hero.btn.register": "Cerrado",
         "hero.btn.date": "14-16 de abril",
 
         // About (Detalles)
