@@ -44,7 +44,7 @@ export const translations = {
         "challenges.status.open": "Inscripciones Abiertas",
         "challenges.status.limited": "⚠️ Plazas Limitadas",
         "challenges.ml.id": "RETO 01",
-        "challenges.ml.title": "Reto 1: Principiante",
+        "challenges.ml.title": "Reto 1: Optimizacion",
         "challenges.ml.desc": "Reto de nivel principiante para introducirte en el mundo de la IA y el procesamiento de datos.",
         "challenges.opt.id": "RETO 02",
         "challenges.opt.title": "Reto 2: ML / DL",
